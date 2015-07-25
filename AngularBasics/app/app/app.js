@@ -2,7 +2,7 @@
  * Created by Radi on 7/25/2015.
  */
 'use strict';
-var basicApp = angular.module('basicApp', ['ngRoute', 'phoneControllers', 'phoneFilters']);
+var basicApp = angular.module('basicApp', ['ngRoute', 'phoneControllers', 'phoneFilters', 'phoneAnimations']);
 
 basicApp.config(['$routeProvider',
     function($routeProvider) {

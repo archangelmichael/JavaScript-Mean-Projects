@@ -17,6 +17,8 @@
             </ul>
         </div>
     </div>
-    <div class="row" style="text-align: center" > <img ng-src="{{enlargedImageUrl}}" ng-hide="enlargedImageUrl==null" class="phone"> </div>
-
+    <div class="row" style="text-align: center" >
+        <img style="display: inline" ng-src="{{enlargedImageUrl}}" ng-hide="enlargedImageUrl==null" >
+        <button style="text-align: left; vertical-align: top" ng-bind="enlargedImageUrl | checkmark" ng-hide="enlargedImageUrl==null"> CLOSE </button>
+    </div>
 </div>

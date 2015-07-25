@@ -52,6 +52,7 @@ phoneControllers.controller('PhoneDetailsCtrl', ['$scope', '$routeParams', '$htt
         });
 
         $scope.setImage = function(imageUrl) {
+            console.log($scope.enlargedImageUrl);
             if ($scope.enlargedImageUrl == null) {
                 $scope.enlargedImageUrl = imageUrl;
             } else {
