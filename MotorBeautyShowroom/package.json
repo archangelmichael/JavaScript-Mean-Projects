@@ -1,0 +1,19 @@
+{
+  "name": "motor-beauty-showroom",
+  "version": "1.0.0",
+  "description": "Showroom of my favourite and most beautiful motorcycles and cars",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Archangel",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.13.2",
+    "express": "^4.13.1",
+    "jsonwebtoken": "^5.0.4",
+    "mongoose": "^4.0.8",
+    "morgan": "^1.6.1"
+  }
+}

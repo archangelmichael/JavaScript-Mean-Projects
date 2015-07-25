@@ -1,0 +1,92 @@
+// USERS
+
+REGISTER
+request: POST
+route: localhost:3000/api/signup
+parameters: { name : "name", username : "username", password : "password" }
+response OK: { message : "User has been created!" }
+error: error message
+
+LOGIN
+request: POST
+route:  localhost:3000/api/login
+parameters: {  username : "username", password : "password" }
+response OK: {  success : true,  message : "Successful login!", token : "token" }
+response NOT OK: { message: "User doesnt exist" }
+error: error message
+
+GET ALL USERS
+request : GET
+route: localhost:3000/api/users
+response OK: users in JSON format
+error : some error message
+
+// VEHICLES
+GET ALL VEHICLES
+request: GET
+route: localhost:3000/api/vehicles
+response OK:{ success: false, message: "No vehicles"}
+response NOT OK: { success: false, message: "No vehicles"}
+error: error message
+
+GET VEHICLE BY MODEL
+request: POST
+route: localhost:3000/api/vehicle
+parameters : { model : "model" }
+response OK:{ success: true, vehicle: vehicle }
+response NOT OK: { success: false, message: "No vehicle with this model"}
+error: error message
+
+ADD VEHICLE
+request: POST
+route: localhost:3000/api/vehicles
+parameters:
+{
+    token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9
+    model : FRZ1000R ,
+    name : Thunderace,
+    productionStart : 1996,
+    productionEnd : 2003,
+    weight : 198,
+    power : 145,
+    topSpeed : 269,
+    picturePath : './images/FRZ1000R.jpg' ,
+    manufacturerId : 55b13c7c6d95d15412cad39e ,
+    comments : [],
+    votes: 0 ,
+    favs: 0
+}
+response OK: { success: true, message: "Vehicle created successfully.", result : result }
+response NOT OK: { success: false, error : error}
+
+// MANUFACTURERS
+GET ALL MANUFACTURERS
+request: GET
+route: localhost:3000/api/manufacturers
+response OK:{ success: true, manufacturers: manufacturers }
+response NOT OK: ({ success: false, message: "No manufacturers"}
+error: error message
+
+GET MANUFACTURER BY ID
+request: POST
+route: localhost:3000/api/manufacturer
+parameters: { id : "id" }
+response OK: { success: true, manufacturer: manufacturer }
+response NOT OK: { success: false, message: "No such manufacturer"}
+error: error message
+
+ADD MANUFACTURER
+request: POST
+route: localhost:3000/api/manufacturers
+parameters:
+{
+ 	token : 'token'
+	name : 'yamaha',
+	founded : 'October 12, 1887',
+	founders : ['Torakusu Yamaha'],
+	picturePath : './images/yamaha.jpg',
+	location : 'Hamamatsu, Shizuoka Prefecture, Japan',
+	website : 'http://www.yamaha-motor.com'
+}
+response OK: { success: true, message: "Manufacturer created successfully.", result : result }
+response NOT OK: { success: false, error : error}
