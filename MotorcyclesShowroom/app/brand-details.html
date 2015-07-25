@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> Motorcycles Showroom </title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="content/app.css">
+</head>
+<body ng-app="myShowroom" ng-controller="PageController" ng-cloak>
+
+<div class="navbar info-style">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand"> Showroom Since 2005</a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav info-hover-style">
+                <li>
+                    <a href="#" > All Brands </a>
+                </li>
+                <li>
+                    <a href="#" > All Motorcycles </a>
+                </li>
+                <li>
+                    <a href="#" > Add Motorcycle </a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="container" ng-controller="BrandDetailsController" ng-cloak>
+    <div class="jumbotron info-style" ng-repeat="brand in brands">
+        <div class="row" >
+            <div class="col-md-5">
+                <img class="brand-logo-container" src="{{brand.logo}}" />
+            </div>
+            <div class="col-md-6" >
+                <h2 ng-bind="brand.name | uppercase"> </h2>
+                <div>
+                    <strong> Founded: </strong> {{brand.founded}}
+                </div>
+                <div>
+                    <strong> More Information: </strong>
+                    <button ng-click="showBrandDetails()" class="btn btn-info info-hover-style" ng-bind="moreInfoButtonText"></button>
+                    <div ng-show="areDetailsShown">
+                        <div>
+                            <strong> Founders: </strong>
+                            <ul class="list-group">
+                                <li class="list-group-item"
+                                    ng-repeat="founder in brand.founders"
+                                    ng-class-odd="oddTextClass"
+                                    ng-class-even="evenTextClass">
+                                    <span ng-bind="founder" ></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong> Location:  </strong>
+                            <span ng-bind="brand.additionalInformation.location"></span>
+                        </div>
+                        <div>
+                            <strong> Official Site:  </strong>
+                            <a href="{{brand.additionalInformation.website}}">
+                                <span ng-bind="brand.additionalInformation.website"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    {{ randomDate }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer ng-controller="FooterController" class="text-center" ng-cloak>
+    <hr/>
+    <div> Author: <span ng-bind="author"></span> </div>
+    <div> Date: <span ng-bind="currentDate | date:'d MMMM yyyy'"></span> </div>
+    <span ng-bind="copyrights"></span>
+</footer>
+<script src="app/data/database-data.js" ></script>
+<script src="node_modules/jquery/jquery-2.1.3.min.js" ></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+<script src="node_modules/angular/angular.js" ></script>
+<script src="node_modules/angular-route/angular-route.js" ></script>
+<script src="app/app.js" ></script>
+<script src="app/controllers/PageCtrl.js" ></script>
+<script src="app/controllers/HomeCtrl.js" ></script>
+<script src="app/controllers/FooterCtrl.js"></script>
+<script src="app/controllers/BrandDetailsCtrl.js"></script>
+</body>
+</html>

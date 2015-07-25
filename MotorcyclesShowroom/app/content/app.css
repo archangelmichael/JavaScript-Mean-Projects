@@ -1,0 +1,35 @@
+.brand-logo-container {
+    width: 100%;
+    height: 100%;
+}
+
+.info-style {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.info-style-border {
+    border-color: #46b8da;
+}
+
+.even-text-class {
+    color: #fff;
+    background-color: #5bc0de;
+}
+
+.odd-text-class {
+    color: #5bc0de;
+    background-color: #fff;
+}
+
+.info-hover-style li a:hover, .info-hover-style li a:visited {
+    background-color: greenyellow;
+}
+
+button.info-hover-style:active {
+    color: #000000;
+    background-color: greenyellow;
+}
+
+
