@@ -1,7 +1,18 @@
 <!-- BASICS -->
+<h2>What is your name? </h2>
+<input type="text" ng-model="username"/>
+<button ng-click="hello(username)"> Hello </button>
+
 <p ng-bind-template="This is {{'string ' + 'concatenation'}}"></p>
 <p ng-bind-template="This is math calculation {{ 1 + 2 }}"></p>
 <table>
     <tr><th>row number</th></tr>
     <tr ng-repeat="i in [0, 1, 2, 3]"><td ng-bind="i+1"></td></tr>
 </table>
+
+        <!-- BUILD-IN FILTERS -->
+<div> {{ "lower cap string" | uppercase }} </div>
+<div>   {{ {foo: "bar", baz: 23} | json }}</div>
+<div>   {{ 1304375948024 | date }}</div>
+<div>   {{ 1304375948024 | date:"MM/dd/yyyy @ h:mma" }} </div>
+<input ng-model="userInput"> <span  ng-bind-template="Uppercased: {{ userInput | uppercase }}"></span>

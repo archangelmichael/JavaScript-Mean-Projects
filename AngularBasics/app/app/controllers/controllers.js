@@ -8,6 +8,12 @@ basicApp.controller('FooterCtrl', function FooterCtrl($scope) {
     $scope.copyrights = 'Copyright ©ARCHANGEL 2015';
 });
 
+basicApp.controller('BasicsCtrl', function BasicsCtrl($scope) {
+    $scope.hello = function(name) {
+        alert('Hello ' + (name || 'YOU') + '!');
+    }
+});
+
 
 var phoneControllers = angular.module('phoneControllers', []);
 
@@ -42,7 +48,15 @@ phoneControllers.controller('PhoneDetailsCtrl', ['$scope', '$routeParams', '$htt
             }
 
             $scope.details = details;
-            console.log(details);
+            $scope.avatarImageURL = data.imageURL;
         });
+
+        $scope.setImage = function(imageUrl) {
+            if ($scope.enlargedImageUrl == null) {
+                $scope.enlargedImageUrl = imageUrl;
+            } else {
+                $scope.enlargedImageUrl = null;
+            }
+        };
     }
 ]);

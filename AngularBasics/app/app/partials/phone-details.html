@@ -5,16 +5,18 @@
     </div>
     <div class="row" >
         <div class="col-md-2 col-md-offset-1">
-            <img ng-src="{{phone.imageURL}}" class="thumbnail" style="width: 200px">
+            <img ng-src="{{avatarImageURL}}" ng-click="setImage(avatarImageURL)" class="thumbnail" style="width: 200px">
         </div>
         <div class="col-md-7">
             <ul class="specs" style="list-style-type: none">
                 <h3>Details: </h3>
                 <li ng-repeat="prop in details">
-                    <span ng-bind="prop.title"></span>
-                    <span ng-bind="prop.value"></span>
+                    <span ng-bind="prop.title | uppercase "></span> : <span ng-bind="prop.value"></span>
                 </li>
+                <span ng-bind-template="Votes: {{phone.votes}} {{phone.votes | checkmark }}"> </span>
             </ul>
         </div>
     </div>
+    <div class="row" style="text-align: center" > <img ng-src="{{enlargedImageUrl}}" ng-hide="enlargedImageUrl==null" class="phone"> </div>
+
 </div>
