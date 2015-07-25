@@ -1,0 +1,15 @@
+{
+    "id":"galaxys6",
+    "name" : "Galaxy S6",
+    "manufacturer" : "Samsung",
+    "release" : "March 2015",
+    "imageURL" : "app/images/phones/samsungs/galaxys6.png",
+    "size" : "143.4 x 70.5 x 6.8 mm",
+    "weight" : "138 g",
+    "platform" : "Android OS, v5.0.2 (Lollipop), upgradable to v5.1.1 (Lollipop)",
+    "screenSize" : "5.1 inches",
+    "resolution" : "1440 x 2560 pixels (~577 ppi pixel density)",
+    "cpu" : "Quad-core 1.5 GHz Cortex-A53 & Quad-core 2.1 GHz Cortex-A57",
+    "memory" : "32/64/128 GB, 3 GB RAM",
+    "camera" : "16 MP, 2988 x 5312 pixels, optical image stabilization, autofocus, LED flash"
+}

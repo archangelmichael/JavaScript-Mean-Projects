@@ -1,0 +1,84 @@
+[
+    {
+        "id":"iphone4",
+        "name" : "iPhone 4",
+        "manufacturer" : "Apple",
+        "year" : "2010" ,
+        "imageURL" : "app/images/phones/iphone.png"
+    },
+    {
+        "id":"iphone4s" ,
+        "name" : "iPhone 4s",
+        "manufacturer" : "Apple",
+        "year" : "2014",
+        "imageURL" : "app/images/phones/iphone.png"
+    },
+    {
+        "id": "iphone5",
+        "name" : "iPhone 5",
+        "manufacturer" : "Apple",
+        "year" : "2013",
+        "imageURL" : "app/images/phones/iphone.png"
+    },
+    {
+        "id": "iphone5s",
+        "name" : "iPhone 5s",
+        "manufacturer" : "Apple",
+        "year" : "2014",
+        "imageURL" : "app/images/phones/iphone.png"
+    },
+    {
+        "id": "iphone6",
+        "name" : "iPhone 6",
+        "manufacturer" : "Apple",
+        "year" : "2015",
+        "imageURL" : "app/images/phones/iphone.png"
+    },
+    {
+        "id": "galaxys6",
+        "name" : "Galaxy S6",
+        "manufacturer" : "Samsung",
+        "year" : "2015" ,
+        "imageURL" : "app/images/phones/samsung.png"
+    },
+    {
+        "id": "galaxys5",
+        "name" : "Galaxy S5",
+        "manufacturer" : "Samsung",
+        "year" : "2014",
+        "imageURL" : "app/images/phones/samsung.png"
+    },
+    {
+        "id": "galaxys3",
+        "name" : "Galaxy S3",
+        "manufacturer" : "Samsung",
+        "year" : "2012",
+        "imageURL" : "app/images/phones/samsung.png" },
+    {
+        "id": "galaxys4",
+        "name" : "Galaxy S4",
+        "manufacturer" : "Samsung",
+        "year" : "2013",
+        "imageURL" : "app/images/phones/samsung.png" },
+    {
+        "id": "z2",
+        "name" : "Experia Z2",
+        "manufacturer" : "Sony",
+        "year" : "2014",
+        "imageURL" : "app/images/phones/sony.png"
+    },
+    {
+        "id": "z1",
+        "name" : "Experia Z1",
+        "manufacturer" : "Sony",
+        "year" : "2013",
+        "imageURL" : "app/images/phones/sony.png"
+    },
+    {
+        "id": "z3",
+        "name" : "Experia Z3",
+        "manufacturer" : "Sony",
+        "year" : "2015",
+        "imageURL" : "app/images/phones/sony.png"
+    }
+]

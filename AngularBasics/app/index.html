@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="app/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="app/images/favicon.png" type="image/x-icon">
+
+    <title> Angular Basics </title>
+    <link rel="stylesheet" href="app/styles/app.css"/>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-theme.css">
+</head>
+<body ng-app="basicApp" ng-cloak>
+<!-- HEADER -->
+    <div class="navbar info-style">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand"> Showroom Since 2005</a>
+            </div>
+         </div>
+    </div>
+
+<!-- BODY -->
+    <div ng-view></div>
+
+<!-- FOOTER -->
+    <footer ng-controller="FooterCtrl" class="text-center" ng-cloak>
+        <hr/>
+        <div> Author: <span ng-bind="author"></span> </div>
+        <div> Date: <span ng-bind="currentDate | date:'d MMMM yyyy'"></span> </div>
+        <span ng-bind="copyrights"></span>
+    </footer>
+
+<!-- PACKAGES -->
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+<!-- ANGULAR SCRIPTS -->
+    <script type="text/javascript" src="../node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="../node_modules/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
+    <script src="app/controllers/controllers.js"></script>
+</body>
+</html>

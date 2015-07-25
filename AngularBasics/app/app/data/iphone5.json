@@ -1,0 +1,15 @@
+{
+    "id":"iphone5",
+    "name" : "iPhone 5",
+    "manufacturer" : "Apple",
+    "release" : "September 2012",
+    "imageURL" : "app/images/phones/iphones/iphone5.png",
+    "size" : "123.8 x 58.6 x 7.6 mm",
+    "weight" : "112 g",
+    "platform" : "iOS 6, upgradable to iOS 8.4",
+    "screenSize" : "4 inches",
+    "resolution" : "640 x 1136 pixels (~326 ppi pixel density)",
+    "cpu" : "Dual-core 1.3 GHz Swift (ARM v7-based)",
+    "memory" : "16/32/64 GB, 1 GB RAM DDR2",
+    "camera" : "8 MP, 3264 x 2448 pixels, autofocus, LED flash"
+}

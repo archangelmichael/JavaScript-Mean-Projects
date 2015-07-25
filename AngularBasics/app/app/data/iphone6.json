@@ -1,0 +1,15 @@
+{
+    "id":"iphone6",
+    "name" : "iPhone 6",
+    "manufacturer" : "Apple",
+    "release" : "September 2014",
+    "imageURL" : "app/images/phones/iphones/iphone6.png",
+    "size" : "138.1 x 67 x 6.9 mm",
+    "weight" : "129 g",
+    "platform" : "iOS 8, upgradable to iOS 8.4",
+    "screenSize" : "4.7 inches",
+    "resolution" : "750 x 1334 pixels (~326 ppi pixel density)",
+    "cpu" : "Apple A8 Dual-core 1.4 GHz Cyclone (ARM v8-based)",
+    "memory" : "16/32/64 GB, 1 GB RAM",
+    "camera" : "8 MP, 3264 x 2448 pixels, phase detection autofocus, dual-LED (dual tone) flash"
+}

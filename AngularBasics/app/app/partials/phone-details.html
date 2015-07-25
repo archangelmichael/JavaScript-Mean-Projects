@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="row">
+        <h1 style="text-align: center" ng-bind="phone.name | uppercase"></h1>
+        <h2 style="text-align: center" ng-bind-template="by {{phone.manufacturer}}"></h2>
+    </div>
+    <div class="row" >
+        <div class="col-md-2 col-md-offset-1">
+            <img ng-src="{{phone.imageURL}}" class="thumbnail" style="width: 200px">
+        </div>
+        <div class="col-md-7">
+            <ul class="specs" style="list-style-type: none">
+                <h3>Details: </h3>
+                <li ng-repeat="prop in details">
+                    <span ng-bind="prop.title"></span>
+                    <span ng-bind="prop.value"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

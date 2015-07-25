@@ -1,0 +1,15 @@
+{
+    "id":"xperiaz1",
+    "name" : "Xperia Z1",
+    "manufacturer" : "Sony",
+    "release" : "September 2013",
+    "imageURL" : "app/images/phones/sonys/xperiaz1.png",
+    "size" : "144 x 74 x 8.5 mm",
+    "weight" : "170 g",
+    "platform" : "Android OS, v4.2 (Jelly Bean), upgradable to v5.1 (Lollipop)",
+    "screenSize" : "5 inches",
+    "resolution" : "720 x 1280 pixels (~306 ppi pixel density)",
+    "cpu" : "Quad-core 2.2 GHz Krait 400",
+    "memory" : "16 GB, 2 GB RAM",
+    "camera" : "20.7 MP, 5248 х 3936 pixels, autofocus, LED flash"
+}

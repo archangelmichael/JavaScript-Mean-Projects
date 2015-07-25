@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-5">
+            <!-- REPEAT TEMPLATE -->
+            <div>
+                <label for="search-field"> Search phones: </label>
+                <input id="search-field" ng-model="query" />
+            </div>
+            <div>
+                <label for="sort-field"> Sort by: </label>
+                <select id="sort-field" ng-model="orderProp">
+                    <option value="name">Alphabetical</option>
+                    <option value="-year">Newest</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <p ng-bind-template="Total number of phones: {{phones.length}}"></p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-5">
+            <ul> Best Phones:
+                <li ng-repeat="phone in phones | filter : query | orderBy:orderProp" class="thumbnail">
+                    <a href="#/phones/{{phone.id}}" class="thumb">
+                        <span><img style="width:50px; height:50px" ng-src="{{phone.imageURL}}"></span>
+                    </a>
+                    <a href="#/phones/{{phone.id}}">
+                        <span ng-bind="phone.name"></span> by <strong ng-bind="phone.manufacturer"></strong>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

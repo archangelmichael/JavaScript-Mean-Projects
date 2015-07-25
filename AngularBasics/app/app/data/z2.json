@@ -1,0 +1,15 @@
+{
+    "id":"xperiaz2",
+    "name" : "Xperia Z2",
+    "manufacturer" : "Sony",
+    "release" : "February 2014",
+    "imageURL" : "app/images/phones/sonys/xperiaz2.png",
+    "size" : "146.8 x 73.3 x 8.2 mm",
+    "weight" : "163 g",
+    "platform" : "Android OS, v4.4.2 (KitKat), v5.0.2 (Lollipop), planned upgrade to v5.1 (Lollipop)",
+    "screenSize" : "5.2 inches",
+    "resolution" : "1080 x 1920 pixels (~424 ppi pixel density)",
+    "cpu" : "Quad-core 2.3 GHz Krait 400",
+    "memory" : "16 GB, 3 GB RAM",
+    "camera" : "20.7 MP, 5248 х 3936 pixels, autofocus, LED flash"
+}

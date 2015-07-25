@@ -1,0 +1,15 @@
+{
+    "id":"iphone4",
+    "name" : "iPhone 4",
+    "manufacturer" : "Apple",
+    "release" : "June 2010",
+    "imageURL" : "app/images/phones/iphones/iphone4.png",
+    "size" : "115.2 x 58.6 x 9.3 mm",
+    "weight" : "137 g",
+    "platform" : "OS iOS 4, upgradable to iOS 7.1.1",
+    "screenSize" : "3.5 inches",
+    "resolution" : "640 x 960 pixels (~330 ppi pixel density)",
+    "cpu" : "1 GHz Cortex-A8",
+    "memory" : "8/16/32 GB, 512 RAM",
+    "camera" : "5 MP, 2592 x 1935 pixels, autofocus, LED flash"
+}
